@@ -63,7 +63,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                include: srcPath,
+                // include: srcPath,
                 use: [
                     isProduct ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',

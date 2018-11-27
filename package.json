@@ -9,15 +9,21 @@
     "dev": "webpack-dev-server --config build/webpack.dev.config.js",
     "watch": "webpack --config build/webpack.prod.config.js --watch"
   },
-  "keywords": ["vue", "webpack", "elementUI"],
+  "keywords": [
+    "vue",
+    "webpack",
+    "elementUI"
+  ],
   "author": "Pigerla",
   "license": "ISC",
   "dependencies": {
+    "element-ui": "^2.4.8",
     "lodash": "^4.17.10",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "autoprefixer": "^9.1.5",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.2",

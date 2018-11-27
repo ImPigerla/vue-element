@@ -12,15 +12,16 @@ module.exports = webpackMerge(baseConfig, {
         // http代理配置，更多查阅：https://github.com/chimurai/http-proxy-middleware#options
         proxy: {
             '/mock': {
-                target: 'http://192.168.44.125:7300',
+                target: 'http://服务器IP:服务器端口',
                 changeOrigin: true,
                 autoRewrite: 302
             }
         },
         contentBase: distPath,
-        hot: true,               // 启用HotModuleReplacement
-        stats: 'minimal',        // 精简编辑信息输出
-        overlay: true            // 是否覆盖页面显示错误信息
+        hot: true,                  // 启用HotModuleReplacement
+        stats: 'minimal',           // 精简编辑信息输出
+        overlay: true,              // 是否覆盖页面显示错误信息
+        historyApiFallback: true    // 支持vue-router history 模式
     },
     plugins: [
         new HtmlWebpackPlugin(htmlPlugin),

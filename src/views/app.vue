@@ -1,17 +1,24 @@
 <template>
     <section>
-        <p class="text test-p">vue app , nginx ok1111</p>
+        <p class="text test-p">hello, Vue ElementUI App</p>
+        <el-input type="textarea" v-model.trim="content" placeholder="请输入"></el-input>
+        <p v-text="content"></p>
     </section>
 </template>
 
 <script>
     export default {
-        name: 'app'
+        name: 'app',
+        data () {
+            return {
+                content: ''
+            }
+        }
     }
 </script>
 
 <style lang="scss">
     .test-p {
-        display : flex;
+        text-align: center;
     }
 </style>
