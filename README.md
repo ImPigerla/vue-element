@@ -7,3 +7,15 @@ Vue + ElementUI整合webpack构建工具的项目。
 1. 支持SCSS编译及全局变量引用（甚至mixins）；
 1. 支持autoprefixer；
 1. 支持eslint配置
+
+## 如何开始
+
+```js
+npm install
+
+// 开发模式
+npm run dev
+
+// 生成模式
+npm run build
+```
