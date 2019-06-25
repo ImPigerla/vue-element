@@ -15,7 +15,7 @@ Vue.config.productionTip = false
 Vue.config.devtools = !isProduct
 
 new Vue({
-    el: '#app',
-    template: '<app></app>',
-    components: {App}
+  el: '#app',
+  template: '<app></app>',
+  components: {App}
 })
