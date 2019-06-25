@@ -1,3 +1,7 @@
+/**
+ * .vue 和 .js文件的
+ * eslint规则配置
+ */
 module.exports = {
     root: true,
     parser: 'babel-eslint',
