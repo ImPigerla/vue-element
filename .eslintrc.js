@@ -35,6 +35,9 @@ module.exports = {
         ],
 
         // 禁止在大括号内强制一致的间距
-        'object-curly-spacing': ["error", "never"]
+        'object-curly-spacing': ['error', 'never'],
+
+        // 文件最后必须有空行，0为不限制
+        'eol-last': 0,
     }
 };
