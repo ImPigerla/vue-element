@@ -43,6 +43,8 @@ npm run build
     │   │   │   └── system-variable.scss (系统变量)
     │   │   └── index.scss (样式统一出口，可选)
     │   └── views (页面文件)
-    │   └── views (页面文件)
+    │       ├── about (举例，这是关于页面)
+    │       ├── category (举例，这是分类页面)
+    │       ├── page (举例，这是页面页面)
     │       └── app.vue（入口文件）
     └─── .eslintrc.js（eslint配置文件）
